@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Appdup</string>
+    <string name="very_severly_underweight">very severly underweight</string>
+    <string name="underweight"> underweight</string>
+    <string name="normal">normal</string>
+    <string name="overweight">overweight</string>
+    <string name="obese_class_i">obese</string>
+    <string name="obese_class_ii">critical</string>
+    <string name="obese_class_iii">critically obese</string>
+
+</resources>
