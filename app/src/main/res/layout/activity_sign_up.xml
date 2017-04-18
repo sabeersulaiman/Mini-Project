@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    >
+<RelativeLayout
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.a96group.appdup.activities.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/logo_image_login"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/login_logo"
+        />
+    <LinearLayout
+        android:layout_below="@+id/logo_image_login"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+        android:height="60dp"
+        android:layout_margin="16dp"
+        android:padding="10dp"
+        android:background="@drawable/layout_bg_rounded_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+            android:id="@+id/name" />
+        <EditText
+        android:height="60dp"
+        android:layout_margin="16dp"
+        android:padding="10dp"
+        android:background="@drawable/layout_bg_rounded_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+            android:id="@+id/age" />
+        <android.support.v7.widget.CardView
+            android:id="@+id/choose_card"
+            android:layout_below="@+id/bankViewGroup"
+            android:layout_centerHorizontal="true"
+            android:onClick="DialogCreator"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <RelativeLayout
+                android:onClick="DialogCreator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/genderChooser"
+                    android:textSize="19sp"
+                    android:onClick="DialogCreator"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/def_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_face_blue"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <!--<Button-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:text="Make me Fit"-->
+        <!--android:background="@drawable/layout_bg_rounded_blue"-->
+        <!--/>-->
+        <EditText
+            android:height="60dp"
+            android:layout_margin="16dp"
+            android:padding="10dp"
+            android:background="@drawable/layout_bg_rounded_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Height"
+            android:id="@+id/height" />
+        <EditText
+            android:height="60dp"
+            android:layout_margin="16dp"
+            android:padding="10dp"
+            android:background="@drawable/layout_bg_rounded_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight"
+            android:id="@+id/weight" />
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_thumb_up_white_24dp"
+        android:layout_centerInParent="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
+</ScrollView>

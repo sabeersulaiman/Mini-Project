@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.a96group.appdup">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
     <application
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
         android:allowBackup="true"
         android:icon="@drawable/logod"
         android:label="@string/app_name"
@@ -18,16 +23,20 @@
         </activity>
         <activity android:name=".MainActivity2" />
 
-
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="com.a96group.appdup.MainActivity2" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="61a0becf015c25aebd53d539aea6b732c77e1890" />
+
         <activity
             android:name=".MainActivity3"
             android:noHistory="true"
             android:parentActivityName=".MainActivity2" />
-
-
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.SignUpActivity" />
+        <activity android:name=".activities.ResultActivity"></activity>
     </application>
 
 </manifest>

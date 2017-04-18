@@ -132,9 +132,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     private String displayBMI(float bmi) {
         String bmilabel = "";
-        if (Float.compare(bmi, 15f) <= 0) {
-            bmilabel = getString(R.string.very_severly_underweight);
-        } else if (Float.compare(bmi, 15f) > 0 && Float.compare(bmi, 18.5f) <= 0) {
+        if (Float.compare(bmi, 15f) > 0 && Float.compare(bmi, 18.5f) <= 0) {
             bmilabel = getString(R.string.underweight);
         } else if (Float.compare(bmi, 18.5f) > 0 && Float.compare(bmi, 25f) <= 0) {
             bmilabel = getString(R.string.normal);
