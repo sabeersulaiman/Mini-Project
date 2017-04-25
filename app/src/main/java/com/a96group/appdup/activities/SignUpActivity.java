@@ -142,7 +142,7 @@ public class SignUpActivity extends AppCompatActivity {
         ed.putString("NAME", user.name);
         ed.apply();
 
-        Intent intent = new Intent(SignUpActivity.this, MainActivity3.class);
+        Intent intent = new Intent(SignUpActivity.this, ResultActivity.class);
         startActivity(intent);
         finish();
     }
