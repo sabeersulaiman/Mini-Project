@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.a96group.appdup">
 
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -37,7 +39,7 @@
         <activity android:name=".activities.SignUpActivity" />
         <activity android:name=".activities.ResultActivity" />
         <activity android:name=".activities.ListDiets" />
-        <activity android:name=".activities.DietActivity"></activity>
+        <activity android:name=".activities.DietActivity" />
     </application>
 
 </manifest>
